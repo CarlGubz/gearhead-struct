@@ -1,0 +1,80 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PrePoMaxLauncher.MainWindow"
+        Width="500"
+        Height="300"
+        Title="GearHead Struct">
+
+    <!-- <StackPanel Margin="20" Spacing="10">
+
+        <TextBlock Text="Welcome to GearHead Struct"
+                   FontSize="24"/>
+
+        <Button Name="LaunchPrePoMaxButton"
+                Content="Launch PrePost"
+                Height="40"/>
+
+        <Button Name="LaunchCalculixButton"
+                Content="Launch GI Solver"
+                Height="40"/>
+
+    </StackPanel> -->
+    <!-- Grid splits the window into two equal horizontal columns -->
+    <Grid ColumnDefinitions="*, *">
+        
+        <!-- COLUMN 0 (LEFT SIDE): Button Controls -->
+        <StackPanel Grid.Column="0" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" 
+                    Spacing="20">
+            
+            <TextBlock Text="FEA made easy." 
+                       FontSize="22" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,10"/>
+            
+            <!-- This Name matches your FindControl in C# -->
+            <Button Name="LaunchPrePoMaxButton" 
+                    Content="Launch GI-PrePost" 
+                    Width="220" 
+                    Height="50" 
+                    HorizontalContentAlignment="Center" 
+                    VerticalContentAlignment="Center"
+                    FontSize="16"/>
+            
+            <!-- This Name matches your FindControl in C# -->
+            <Button Name="LaunchCalculixButton" 
+                    Content="Launch GI-Solver" 
+                    Width="220" 
+                    Height="50" 
+                    HorizontalContentAlignment="Center" 
+                    VerticalContentAlignment="Center"
+                    FontSize="16"/>
+        </StackPanel>
+
+        <!-- COLUMN 1 (RIGHT SIDE): Application Logo -->
+        <!-- <Border Grid.Column="1" 
+                Background="#F5F5F5" 
+                CornerRadius="0,12,12,0">
+            <StackPanel VerticalAlignment="Center" 
+                        HorizontalAlignment="Center" 
+                        Spacing="15">
+                
+                
+                <Image Source="avares://PrePoMaxLauncher/Assets/logo.png" 
+                       Width="240" 
+                       Height="240" 
+                       Stretch="Uniform"/>
+                
+                <TextBlock Text="GI Launcher System v1.0" 
+                           HorizontalAlignment="Center" 
+                           Foreground="#666666"
+                           FontSize="12"/>
+            </StackPanel>
+        </Border> -->
+        
+    </Grid>
+</Window>
+
+
