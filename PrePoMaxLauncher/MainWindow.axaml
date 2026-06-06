@@ -1,0 +1,70 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PrePoMaxLauncher.MainWindow"
+        Width="500"
+        Height="300"
+        Title="GI CAE Launcher"
+        >
+
+
+
+
+    <!-- Grid splits the window into two equal horizontal columns -->
+    <Grid ColumnDefinitions="*, *">
+        
+        <!-- COLUMN 0 (LEFT SIDE): Button Controls -->
+        <StackPanel Grid.Column="0" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" 
+                    Spacing="20">
+            
+            <TextBlock Text="Simulations made easy." 
+                       FontSize="22" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,10"/>
+            
+            <!-- This Name matches your FindControl in C# -->
+            <Button Name="LaunchGIStructButton" 
+                    Content="Launch GI Struct" 
+                    Width="220" 
+                    Height="50" 
+                    HorizontalContentAlignment="Center" 
+                    VerticalContentAlignment="Center"
+                    FontSize="16"/>
+            
+            <!-- This Name matches your FindControl in C# -->
+            <Button Name="LaunchGIFlowButton" 
+                    Content="Launch GI Flow" 
+                    Width="220" 
+                    Height="50" 
+                    HorizontalContentAlignment="Center" 
+                    VerticalContentAlignment="Center"
+                    FontSize="16"/>
+        </StackPanel>
+
+        <!-- COLUMN 1 (RIGHT SIDE): Application Logo -->
+        <Border Grid.Column="1" 
+                Background="#F5F5F5" 
+                CornerRadius="0,12,12,0">
+            <StackPanel VerticalAlignment="Center" 
+                        HorizontalAlignment="Center" 
+                        Spacing="15">
+                
+                
+                <Image Source="avares://PrePoMaxLauncher/app-logos/test-logo4.png" 
+                       Width="240" 
+                       Height="240" 
+                       Stretch="Uniform"/>
+                
+                <TextBlock Text="GI Launcher v1.0" 
+                           HorizontalAlignment="Center" 
+                           Foreground="#666666"
+                           FontSize="12"/>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>
+
+
